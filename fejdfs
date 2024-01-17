@@ -1,263 +1,49 @@
-/* Google Font */
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> ESCRIME </title>
+    <!-- === CSS === --> 
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" id="colorCssFile" href="style.css">
+    <link rel="icon" href="image_site.png">
+</head>
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<body>
+    <!-- === Barre De Navigation === -->
+    <nav class="navbar">
+        <ul class="barre_nav">
+            <img src="Image/CoupeMonde-.webp" class="Image"/>
+            <li class="active"> <a href ="index.html"> Accueil </a> </li>
+            <li> <a href ="Histoire.html"> Inscription </a> </li>
+            <li> <a href ="Explore.html"> Sport </a> </li>
+            <li> <a href ="Avis.html"> Renseignement </a> </li>
+            <li>
+                <input type="checkbox" id="darkmode-toggle">
+                <label for="darkmode-toggle"></label>
+            </li>
+        </ul>
+        <img src="./Image/barre.png" alt="" class="menu-btn">
+    </nav>
+    <header>
+        <div class="header-content">
+            <h1> Bienvenue à la coupe de France des IUT 2024  </h1>
+            <div class="line"></div>
+            <h2> Organisée par l'IUT de Saint-Denis </h2>
+        <h4> Le 28 mars 2024, Une date à noter sur vos agenda !</h4>
+        <img src="./Image/ArierePlan.webp" class="AP"/>
+        <h3> Étudiants, que vous soyez fans de sport ou simplement en quête d'une bonne dose d'adrénaline, ne manquez pas la compétition de l'IUT le 28 mars 2024 à Saint-Denis ! Représentez votre IUT, que vous soyez sportifs aguerris ou amateurs du dimanche. On vous promet une journée pleine de fun, de compétition amicale et de moments inoubliables. L'objectif ? Ramenez ce trophée à la maison et montrez à tous que votre IUT est imbattable. Venez, participez, et faites de cette compétition un moment dont on se souviendra longtemps ! </h3>
+        <div><a href="Explore.html" class="ctn"> Voir les sports</a></div>
+    </div>
+    </header>
+    <script> 
+        const menuBtn= document.querySelector('.menu-btn')
+        const navlinks= document.querySelector('.barre_nav')
 
-ul{
-    list-style: none;
-}
-.active{
-    color :#1c03fc;
-    text-decoration: underline;
-    font-weight: bold;
-}
-body , html {
-    overflow-x: hidden;
-}
-viewport{
-    width: device-width;
-    height: device-height;
-
-}
-/* NAVBAR */
-.navbar{
-    position: absolute;
-    top: 0;
-    left: 0; 
-    display: flex;
-    width: 100%;
-    justify-content: flex-end;
-    padding: 20px;
-    color:black;
-} 
-.barre_nav{
-    display: flex ;
-    align-items: center;
-}
-.barre_nav li{
-    margin : 0 30px;
-}
-.barre_nav img{
-        display: flex;
-        align-items: space-between;
-        left :50%;
-        height : 40px;
-        width: 40px;
-    }
-
-header {
-    width : 100vw;
-    height : 100vh;
-    background-image: url('./Image/6506569.webp');
-    background-position: bottom;
-    background-size: cover;
-    justify-content: center;
-    display: flex;
-    align-items: flex-end;
-    margin-top: 0%;
-}
-.header-content {
-    margin-bottom: 150px;
-    color:rgba(10, 10, 10, 0.932);
-    text-align: center;
-}
-.header-content h2 {
-    font-size: 4vmin;
-    
-}
-.header-content img {
-    margin-top: 0%;
-    left: 50%;
-}
-.line{
-    width: 150px;
-    height : 4px;
-    background: #1c03fc;
-    margin: 10px auto;
-    border-radius: 5px;
-}
-.header-content h1{
-    font-size: 7vmin;
-    margin-top: 50px;
-    margin-bottom: 30px;
-}
-
-.ctn{
-    padding: 8px 15px;
-    background: #1c03fc;
-    border-radius: 40px;
-    color: whitesmoke; 
-}
-.menu-btn{
-    position: absolute;
-    top: 30px;
-    right:30px;
-    width :40px;
-    cursor: pointer;
-    display : none;
-}
-/* Histoire */
-
-.histoire{
-    width : 100vw;
-    height : 100vh;
-    background-image: url(6506569.webp);
-    background-position: bottom;
-    background-size: cover;
-}
-
-.title {
-    text-align: start;
-    padding : 1em;
-    font-size: 4vmin;
-    color: #582900;
-    margin-top: 0%;
-}
-.row{
-    display: flex;
-    align-items: center;
-    width :100%;
-    justify-content: space-between;
-
-}
-.row .col{ 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-.histoire .row{
-    margin-top: 40px;
-    
-}
-.histoire .col img{
-    margin: 0 27px;
-    display: flex;
-    justify-content: space-between;
-}
-.histoire .title .h1{
-    margin-top: 15 vmin;
-    left:50%;
-}
-h4{
-    font-size: 3vmin;
-    color:#582900;
-    margin : 20px auto;
-    font-weight: bold;
-}
-p{
-    color: black;
-    padding: 0px 40px; 
-}
-.histoire .ctn {
-    margin-top: 20px ;
-}
-
-.explore{
-    width : 100%;
-    height : 100vh;
-    background-image: url('6506569.webp');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display : flex;
-    align-items: center;
-}
-.explore-content{
-    width: 100%;
-    padding: 0px 40px;
-    color: black;
-    display : flex;
-    align-items: center;
-    flex-direction: column;
-}
-.explore-content h1{
-    font-size: 7vmin;
-}
-.explore-content .line{
-    margin-bottom: 40px;
-}
-.explore-content p{
-    color: black;
-}
-.explore-content .ctn {
-    margin-top: 40px;
-}
-/* MOBILE */
-
-@media only screen and (max-width:950px){
-    .menu-btn{
-        display: block;
-    }
-    .navbar{
-        padding: 0;
-    }
-    .logo {
-        position: absolute;
-        top: 30px;
-        left:30px;
-    }
-    .barre_nav{
-        flex-direction: column;
-        width: 100%;
-        height: 100vh;
-        justify-content: center;
-        background: #03b5fc;
-        margin-top: -900px;
-        transition: all 0.5s ease;
-    }
-    .mobile-menu{
-        margin-top: 0px;
-        border-bottom-right-radius: 30%;
-    }
-    .barre_nav li{
-        margin: 50px auto; 
-    }
-    .ll {
-        width: 80%;
-    }
-    .histoire{
-    height : 350vw;
-}
-}
-
-/* . Histoire */
-.row {
-    flex-direction: column ;
-}
-.row .col{
-    margin: 10px auto;
-}
-.row .col h1{
-    margin-top: 0%;
-}
-.col img {
-    max-width: 90%;
-}
-
-/* Explore */
-.explore-content{
-    width: 100%;
-}
-
-/* Animation */
-
-img {
-    transition: transform .3s ease;
-}
-img:hover {
-    transform: scale(1.3);
-}
-.ctn:hover{
-    background:whitesmoke ;
-    color :#1c03fc;
-    box-shadow: 2px 2px 5px black;
-}
-
-li:hover {
-    color:#1c03fc;
-    cursor: zoom-out;
-}
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+        </script>
+    <script src="switch.js"></script>
+</body>
