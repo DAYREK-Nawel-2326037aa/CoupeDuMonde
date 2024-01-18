@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: black;
+    font-size: xx-large;
+    text-align: center;
+    font-weight: bold;
+    background-color: bisque;
+}
+h2{
+    font-weight: bold;
+    color: black;
+    font-size: xx-large;
+    text-align: center;
+}
+
+li{
+    font-weight: bold;
+    color: black; 
+    font-size: xx-large;
+    text-align: center;
+    list-style: none;
+}
+/* NAVBAR */
+.Image{
+    position: absolute;
+    top: 0;
+    left: 0; 
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color:black;
+} 
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0; 
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    padding: 20px;
+    color:white;
+} 
+.barre_nav{
+    display: flex ;
+    align-items: center;
+}
+.barre_nav li{
+    margin : 0 30px;
+}
+.barre_nav img {
+    margin-top: 0%;
+    height: 100px;
+    width: 100px;
+    left: 0%;
+}
+.menu-btn{
+    position: absolute;
+    top: 30px;
+    right:30px;
+    width :40px;
+    cursor: pointer;
+    display : none;
+}
+.Titre {
+    font-weight: bold;
+    color:red;
+    font-size: xx-large;
+    text-align: center;
+    list-style: circle;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+
+@media only screen {
+    .menu-btn{
+        display: block;
+    }
+    .navbar{
+        padding: 0;
+        color: whitesmoke;
+    }
+    .logo {
+        position: absolute;
+        top: 30px;
+        left:30px;
+    }
+    .barre_nav{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background-image: url(./Image/Menu.jpg);
+        color: whitesmoke;
+        margin-top: -1000px;
+        transition: all 0.5s ease;
+    }
+    .mobile-menu{
+        margin-top: 0px;
+        border-bottom-right-radius: 0%;
+    }
+    .barre_nav li{
+        margin: 50px auto; 
+        color: whitesmoke;
+    }
+    .ll {
+        width: 80%;
+    }
+    
+}

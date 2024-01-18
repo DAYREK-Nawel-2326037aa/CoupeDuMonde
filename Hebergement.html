@@ -1,0 +1,89 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Coupe du Monde </title>
+    <link rel="icon" href="image_site.png">
+    <!-- === CSS === --> 
+    <link rel="stylesheet" href="./Hebergement.css">
+    <link rel="stylesheet" id="colorCssFile" href="./Hebergement.css">
+    <link rel="icon" href="image_site.png">
+</head>
+<body>
+    <!-- === Barre De Navigation === -->
+    <nav class="navbar">
+        <ul class="barre_nav">
+            <img src="./CoupeMonde.jpg" class="Image"/>
+            <li class="active"> <a href ="Coupe.html"> Accueil </a> </li>
+            <li> <a href ="./Sport.html"> Sport </a> </li>
+            <li> <a href ="./Hebergement.html"> Hebergement </a> </li>
+            <li>
+                <input type="checkbox" id="darkmode-toggle">
+                <label for="darkmode-toggle"></label>
+            </li>
+        </ul>
+        <img src="./barre.png" alt="" class="menu-btn">
+    </nav>
+
+<h2>Hebergement</h2>
+<a> Hôtels<br>
+<ul> <li class="Titre"> Greet Hôtel Villeneuve La Garenne </li> <br>  <a>80 Boulevard Charles De Gaulle, Chem. du Bûcher, 92390 Villeneuve-la-Garenne </a><br>
+</li> <br>
+<br> <li>Téléphone : </li><br>
+<a>01 47 99 56 00</a><br>
+<br> <li> Réservation : </li><br> 
+<a href="https://all.accor.com/hotel/B9N6/index.ja.shtml"> Cliquez ici</a><br>
+<li class="Titre" > Hôtel Ibis Paris-Gennevilliers</li> <br>  <a>32 Rue Louis Calmel, 92230 Gennevilliers </a><br>
+</li> <br>
+<li>Téléphone : </li><br>
+<a>01 40 85 19 19 </a><br>
+<br> <li> Réservation : </li><br> 
+<a href=" https://all.accor.com/hotel/1966/index.en.shtml">  Cliquez ici </a><br>
+<li class="Titre"> ibis Saint-Denis Stade Sud </li> <br>  <a>Zac Des Louvresses, 3 Av. des Louvresses, 92230 Gennevilliers </a><br>
+</li> <br>
+<br> <li>Téléphone : </li><br>
+<a>01 47 90 71 10</a><br>
+<br> <li> Réservation : </li><br> 
+<a href=" https://all.accor.com/hotel/A5T2/index.en.shtml"> Cliquez ici</a><br>
+<li class="Titre"> Campanile Paris Ouest – Gennevilliers Barbanniers </li> <br>  <a>1 Av. Marcel Paul, 92230 Gennevilliers </a><br>
+</li> <br>
+<br> <li>Téléphone : </li><br>
+<a>01 47 94 31 31</a><br>
+<br> <li> Réservation : </li><br> 
+<a href="https://www.booking.com/hotel/fr/campanile-genevilliers-barbanniers.fr.html?aid=2326660"> Cliquez ici</a><br>
+<li class="Titre"> Hôtel F1 Saint Denis Basilique </li> <br>  <a>11 Av. Lénine, 93200 Saint-Denis </a><br>
+</li> <br>
+<br> <li>Téléphone : </li><br>
+<a> 08 91 70 53 77</a><br>
+<br> <li> Réservation : </li><br> 
+<a href="https://all.accor.com/hotel/2287/index.fr.shtml">Cliquez ici</a><br>
+<li class="Titre"> B&B HOTEL Gennevilliers Asnières
+</li> <br>  <a>8 Bd Beaumarchais, 92230 Gennevilliers</a><br>
+</li> <br>
+<br> <li>Téléphone : </li><br>
+<a>08 90 10 67 05</a><br>
+<br> <li> Réservation : </li><br> 
+<a href="https://www.hotel-bb.com/fr/hotel/paris-gennevilliers-asnieres"> Cliquez ici
+</a><br>
+<li class="Titre"> B&B HOTEL Saint-Denis Porte 
+    <br> ParisPremière Classe Paris-Ouest 
+    <br> Gennevilliers
+</li> <br>  <a>4 Av. du Général de Gaulle, 92230 Gennevilliers </a><br>
+</li> <br>
+<br> <li>Téléphone : </li><br>
+<a>01 40 85 16 19</a><br>
+<br> <li> Réservation : </li><br> 
+<a href=" https://gennevilliers-barbanniers.premiereclasse.com/fr-fr/">  Cliquez ici </a><br>
+</ul>
+
+<script> 
+    const menuBtn= document.querySelector('.menu-btn')
+    const navlinks= document.querySelector('.barre_nav')
+    
+    menuBtn.addEventListener('click',()=>{
+        navlinks.classList.toggle('mobile-menu')
+    })
+    </script>
+	<script src="switch.js"></script>
+</body>
+</html>

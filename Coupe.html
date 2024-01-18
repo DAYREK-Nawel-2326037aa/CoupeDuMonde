@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Coupe du Monde </title>
+    <link rel="icon" href="image_site.png">
+    <!-- === CSS === --> 
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" id="colorCssFile" href="./styles.css">
+    <link rel="icon" href="image_site.png">
+</head>
+<body>
+    <!-- === Barre De Navigation === -->
+    <nav class="navbar">
+        <ul class="barre_nav">
+            <img src="./CoupeMonde.jpg" class="Image"/>
+            <li class="active"> <a href ="./Coupe.html"> Accueil </a> </li>
+            <li> <a href ="./Sport.html"> Sport </a> </li>
+            <li> <a href ="./Hebergement.html"> Hebergement </a> </li>
+            <li>
+                <input type="checkbox" id="darkmode-toggle">
+                <label for="darkmode-toggle"></label>
+            </li>
+        </ul>
+        <img src="./barre.png" alt="" class="menu-btn">
+    </nav>
+    <header>
+        <div class="header-content">
+            <h1> Bienvenue à la coupe de France des IUT 2024  </h1>
+            <div class="line"></div>
+            <h2> Organisée par l'IUT de Saint-Denis </h2>
+        <img src ="./CoupeMonde.jpeg" class=""/>
+        <h4> Le 28 mars 2024, Une date à noter sur vos agenda !</h4>
+        <h3> Étudiants, que vous soyez fans de sport ou simplement en quête d'une bonne dose d'adrénaline, ne manquez pas la compétition de l'IUT le 28 mars 2024 à Saint-Denis ! Représentez votre IUT, que vous soyez sportifs aguerris ou amateurs du dimanche. On vous promet une journée pleine de fun, de compétition amicale et de moments inoubliables. L'objectif ? Ramenez ce trophée à la maison et montrez à tous que votre IUT est imbattable. Venez, participez, et faites de cette compétition un moment dont on se souviendra longtemps !</h3>
+        <div><br>
+        <a href="./Sport.html" class="ctn"> Voir les sports</a></div>
+    <br>
+    <a href="https://coupedefrance.iut.fr/inscriptions/" class="ctn"> Pour t'inscrire </a>
+    </div>
+    </header>
+    <script> 
+        const menuBtn= document.querySelector('.menu-btn')
+        const navlinks= document.querySelector('.barre_nav')
+
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+        </script>
+    <script src="switch.js"></script>
+    </html>
+</body>
